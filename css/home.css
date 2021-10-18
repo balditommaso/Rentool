@@ -1,0 +1,150 @@
+
+
+
+
+section{
+    grid-column: 1/13;
+}
+
+
+
+
+
+/*--------------WELCOME-----------------*/
+#welcome {
+	text-align: center;
+	color: orange;
+	padding: 20px;
+}
+
+#welcome h1 {
+	font-size: 50px;
+	margin: 0;
+}
+
+#welcome h3 {
+	font-size: 35px;
+	margin: 0;
+}
+
+
+/*----------------------CATEGORIE-------------------------*/
+nav{
+    grid-column: 2/12;
+    column-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+    column-gap: 30px;
+
+}
+.cont {
+    padding: 8px;
+	text-align: center;
+	float: left;
+	position: relative;
+	object-fit: contain;
+	border-radius: 5px;
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+	border-radius: 8px;
+
+}
+
+.image:hover{
+	cursor: pointer;
+}
+
+.mid {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+/*	-ms-transform: translate(-50%, -50%);  */
+	text-align: center;
+}
+
+.cont:hover .image {
+	opacity: 0.3;
+}
+
+.cont:hover .mid {
+	opacity: 1;
+}
+
+
+#blue.cont{
+	background-color: rgb(54, 197, 223);
+}
+
+#one.text {
+	background-color: rgb(54, 197, 223);
+}
+
+#two.text {
+	background-color: rgb(106, 224, 51);
+}
+
+#green.cont{
+	background-color: rgb(106, 224, 51);
+}
+
+#three.text {
+	background-color: red;
+}
+
+#red.cont{
+	background-color: red;
+}
+
+#four.text {
+	background-color: rgba(250, 225, 2, 0.973);
+}
+
+#yellow.cont{
+	background-color: rgba(250, 225, 2, 0.973);
+}
+
+/*--------------------------ARTICLE-------------------*/
+article{
+    grid-column: 2/12;
+    grid-row: 4/7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 30px;
+    margin: 100px 0;
+}
+.info{
+    background-color: yellow;
+    border-radius: 5px;
+}
+.text {
+	color: white;
+	font-size: 18px;
+	padding: 3px 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.info img {
+	height: 200px;
+}
+
+p.text{
+	text-align: justify;
+    color: black;
+    padding: 20px;
+
+}
+
